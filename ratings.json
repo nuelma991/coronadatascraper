@@ -482,6 +482,30 @@
     "rating": 0.5294117647058824
   },
   {
+    "country": "iso1:AT",
+    "url": "https://info.gesundheitsministerium.at/data/GenesenTodesFaelleBL.js",
+    "timeseries": true,
+    "priority": 1,
+    "maintainers": [
+      {
+        "name": "Quentin Golsteyn",
+        "github": "qgolsteyn",
+        "flag": "🇨🇦"
+      }
+    ],
+    "type": "csv",
+    "headless": false,
+    "certValidation": true,
+    "sources": [
+      {
+        "url": "https://info.gesundheitsministerium.at",
+        "name": "Austrian Ministry of Health"
+      }
+    ],
+    "ssl": true,
+    "rating": 0.5098039215686274
+  },
+  {
     "country": "iso1:BE",
     "url": "https://epistat.wiv-isp.be/",
     "timeseries": true,
@@ -690,7 +714,7 @@
     "headless": false,
     "certValidation": true,
     "priority": 0,
-    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-14",
+    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-15",
     "ssl": true,
     "rating": 0.49019607843137253
   },
@@ -843,19 +867,6 @@
     "rating": 0.49019607843137253
   },
   {
-    "country": "iso1:US",
-    "state": "iso2:US-NJ",
-    "aggregate": "county",
-    "type": "csv",
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "url": "https://opendata.arcgis.com/datasets/24f4fcf164ad4b4280f08c8939dd5dc7_0.csv",
-    "ssl": true,
-    "rating": 0.49019607843137253
-  },
-  {
     "state": "iso2:US-NY",
     "country": "iso1:US",
     "aggregate": "county",
@@ -974,6 +985,18 @@
     "rating": 0.49019607843137253
   },
   {
+    "country": "iso1:IN",
+    "url": "https://www.mohfw.gov.in/",
+    "type": "table",
+    "aggregate": "state",
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "priority": 0,
+    "ssl": true,
+    "rating": 0.47058823529411764
+  },
+  {
     "state": "iso2:US-GA",
     "country": "iso1:US",
     "url": "https://d20s4vd27d0hk0.cloudfront.net",
@@ -1087,25 +1110,6 @@
     "rating": 0.47058823529411764
   },
   {
-    "state": "iso2:US-PA",
-    "country": "iso1:US",
-    "aggregate": "county",
-    "sources": [
-      {
-        "url": "https://www.health.pa.gov/",
-        "name": "Pennsylvania Department of Health"
-      }
-    ],
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "url": "https://www.health.pa.gov/topics/disease/coronavirus/Pages/Cases.aspx",
-    "type": "table",
-    "ssl": true,
-    "rating": 0.47058823529411764
-  },
-  {
     "state": "iso2:US-TX",
     "country": "iso1:US",
     "aggregate": "county",
@@ -1168,6 +1172,39 @@
     "certValidation": true,
     "ssl": true,
     "rating": 0.47058823529411764
+  },
+  {
+    "country": "iso1:KR",
+    "aggregate": "state",
+    "type": "table",
+    "url": "http://ncov.mohw.go.kr/en/bdBoardList.do?brdId=16&brdGubun=162&dataGubun=&ncvContSeq=&contSeq=&board_id=",
+    "sources": [
+      {
+        "url": "http://ncov.mohw.go.kr/",
+        "name": "Ministry of Health and Welfare"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "Jacob McGowan",
+        "github": "jacobmcgowan"
+      },
+      {
+        "name": "Cameron Chamberlain",
+        "email": "corona@camjc.com",
+        "github": "camjc",
+        "country": "iso1:AU",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "flag": "🇦🇺"
+      }
+    ],
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "priority": 0,
+    "ssl": false,
+    "rating": 0.45098039215686275
   },
   {
     "county": "Washoe County",
@@ -2218,48 +2255,6 @@
     "rating": 0.37254901960784315
   },
   {
-    "state": "iso2:US-RI",
-    "country": "iso1:US",
-    "priority": 1,
-    "type": "csv",
-    "sources": [
-      {
-        "url": "https://health.ri.gov/data/covid-19/",
-        "name": "State of Rhode Island Department of Health"
-      }
-    ],
-    "url": "https://health.ri.gov/data/covid-19/",
-    "timeseries": false,
-    "headless": true,
-    "certValidation": true,
-    "ssl": true,
-    "rating": 0.37254901960784315
-  },
-  {
-    "country": "iso1:AT",
-    "url": "https://info.gesundheitsministerium.at/data/Bundesland.js",
-    "timeseries": true,
-    "priority": 1,
-    "maintainers": [
-      {
-        "name": "Quentin Golsteyn",
-        "github": "qgolsteyn",
-        "flag": "🇨🇦"
-      }
-    ],
-    "type": "csv",
-    "headless": false,
-    "certValidation": true,
-    "sources": [
-      {
-        "url": "https://info.gesundheitsministerium.at",
-        "name": "Austrian Ministry of Health"
-      }
-    ],
-    "ssl": true,
-    "rating": 0.35294117647058826
-  },
-  {
     "country": "iso1:AU",
     "maintainers": [
       {
@@ -2313,36 +2308,6 @@
     "state": "iso2:AU-NSW",
     "type": "table",
     "url": "https://www.health.nsw.gov.au/_layouts/feed.aspx?xsl=1&web=/news&page=4ac47e14-04a9-4016-b501-65a23280e841&wp=baabf81e-a904-44f1-8d59-5f6d56519965&pageurl=/news/Pages/rss-nsw-health.aspx",
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "ssl": true,
-    "rating": 0.35294117647058826
-  },
-  {
-    "country": "iso1:AU",
-    "maintainers": [
-      {
-        "name": "Cameron Chamberlain",
-        "email": "corona@camjc.com",
-        "github": "camjc",
-        "country": "iso1:AU",
-        "state": "Victoria",
-        "city": "Melbourne",
-        "flag": "🇦🇺"
-      }
-    ],
-    "priority": 2,
-    "sources": [
-      {
-        "description": "QLD Government Health Department",
-        "name": "QLD Government Health",
-        "url": "https://www.health.qld.gov.au"
-      }
-    ],
-    "state": "iso2:AU-QLD",
-    "type": "table",
-    "url": "https://www.health.qld.gov.au/news-events/doh-media-releases",
     "timeseries": false,
     "headless": false,
     "certValidation": true,
@@ -2441,6 +2406,35 @@
         "name": "COVID-19 Sledilnik"
       }
     ],
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "ssl": true,
+    "rating": 0.3333333333333333
+  },
+  {
+    "country": "iso1:TH",
+    "maintainers": [
+      {
+        "name": "Cameron Chamberlain",
+        "email": "corona@camjc.com",
+        "github": "camjc",
+        "country": "iso1:AU",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "flag": "🇦🇺"
+      }
+    ],
+    "priority": 1,
+    "sources": [
+      {
+        "description": "Department of Disease Control Thailand",
+        "name": "Department of Disease Control Thailand",
+        "url": "https://ddc.moph.go.th/"
+      }
+    ],
+    "type": "json",
+    "url": "https://ddcportal.ddc.moph.go.th/arcgis/rest/services/iT_Neillgis/thai_cities/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&distance=&units=esriSRUnit_Foot&relationParam=&outFields=*&returnGeometry=false&maxAllowableOffset=&geometryPrecision=&outSR=&having=&gdbVersion=&historicMoment=&returnDistinctValues=false&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&multipatchOption=xyFootprint&resultOffset=&resultRecordCount=&returnTrueCurves=false&returnExceededLimitFeatures=false&quantizationParameters=&returnCentroid=false&sqlFormat=none&resultType=&featureEncoding=esriDefault&f=pjson",
     "timeseries": false,
     "headless": false,
     "certValidation": true,
@@ -2699,25 +2693,32 @@
     "rating": 0.3137254901960784
   },
   {
-    "county": "Del Norte County",
-    "state": "iso2:US-CA",
-    "country": "iso1:US",
-    "url": "http://www.co.del-norte.ca.us/departments/health-human-services/public-health",
+    "country": "iso1:NZ",
     "maintainers": [
       {
-        "name": "John Bencina",
-        "github": "jbencina",
-        "country": "iso1:US",
-        "state": "CA",
-        "flag": "🇺🇸"
+        "name": "Cameron Chamberlain",
+        "email": "corona@camjc.com",
+        "github": "camjc",
+        "country": "iso1:AU",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "flag": "🇦🇺"
       }
     ],
+    "priority": 1,
+    "sources": [
+      {
+        "description": "New Zealand Government Ministry of Health",
+        "name": "New Zealand Government Ministry of Health",
+        "url": "https://www.health.govt.nz"
+      }
+    ],
+    "type": "table",
+    "url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
     "timeseries": false,
     "headless": false,
     "certValidation": true,
-    "priority": 0,
-    "type": "list",
-    "ssl": false,
+    "ssl": true,
     "rating": 0.3137254901960784
   },
   {
