@@ -577,24 +577,6 @@
     "rating": 0.5098039215686274
   },
   {
-    "state": "iso2:US-MI",
-    "country": "iso1:US",
-    "sources": [
-      {
-        "name": "Michigan Department of Health & Human Services"
-      }
-    ],
-    "url": "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html",
-    "type": "table",
-    "aggregate": "county",
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "ssl": true,
-    "rating": 0.5098039215686274
-  },
-  {
     "county": "St. Louis County",
     "state": "iso2:US-MO",
     "country": "iso1:US",
@@ -635,7 +617,7 @@
         "note": "Distritos were mapped into counties in this data set; data exists at corregimiento level."
       }
     ],
-    "type": "csv",
+    "type": "json",
     "aggregate": "county",
     "maintainers": [
       {
@@ -652,7 +634,7 @@
     "timeseries": false,
     "headless": false,
     "certValidation": true,
-    "url": "https://opendata.arcgis.com/datasets/898c63fc068745d98fea01b9bf4f05ea_0.csv",
+    "url": "https://services5.arcgis.com/aqOddbAz6HewRw8I/ArcGIS/rest/services/Casos_Covid19_PA/FeatureServer/0/",
     "ssl": true,
     "rating": 0.49019607843137253
   },
@@ -714,7 +696,7 @@
     "headless": false,
     "certValidation": true,
     "priority": 0,
-    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-15",
+    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-16",
     "ssl": true,
     "rating": 0.49019607843137253
   },
@@ -997,25 +979,6 @@
     "rating": 0.47058823529411764
   },
   {
-    "state": "iso2:US-GA",
-    "country": "iso1:US",
-    "url": "https://d20s4vd27d0hk0.cloudfront.net",
-    "type": "table",
-    "aggregate": "county",
-    "sources": [
-      {
-        "url": "https://dph.georgia.gov",
-        "name": "Georgia Department of Public Health"
-      }
-    ],
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "ssl": true,
-    "rating": 0.47058823529411764
-  },
-  {
     "state": "iso2:US-MO",
     "country": "iso1:US",
     "type": "table",
@@ -1057,25 +1020,6 @@
     "aggregate": "county",
     "timeseries": false,
     "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "ssl": true,
-    "rating": 0.47058823529411764
-  },
-  {
-    "state": "iso2:US-NM",
-    "country": "iso1:US",
-    "sources": [
-      {
-        "url": "https://cv.nmhealth.org",
-        "name": "New Mexico Department of Health"
-      }
-    ],
-    "url": "https://cv.nmhealth.org/cases-by-county/",
-    "type": "table",
-    "headless": false,
-    "aggregate": "county",
-    "timeseries": false,
     "certValidation": true,
     "priority": 0,
     "ssl": true,
@@ -2330,6 +2274,36 @@
     "priority": 2,
     "sources": [
       {
+        "description": "QLD Government Health Department",
+        "name": "QLD Government Health",
+        "url": "https://www.health.qld.gov.au"
+      }
+    ],
+    "state": "iso2:AU-QLD",
+    "type": "table",
+    "url": "https://www.health.qld.gov.au/news-events/doh-media-releases",
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "ssl": true,
+    "rating": 0.35294117647058826
+  },
+  {
+    "country": "iso1:AU",
+    "maintainers": [
+      {
+        "name": "Cameron Chamberlain",
+        "email": "corona@camjc.com",
+        "github": "camjc",
+        "country": "iso1:AU",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "flag": "🇦🇺"
+      }
+    ],
+    "priority": 2,
+    "sources": [
+      {
         "description": "SA Government Health Department",
         "name": "SA Health",
         "url": "https://www.sahealth.sa.gov.au"
@@ -2824,6 +2798,25 @@
     "rating": 0.27450980392156865
   },
   {
+    "state": "iso2:US-NM",
+    "country": "iso1:US",
+    "sources": [
+      {
+        "url": "https://cv.nmhealth.org",
+        "name": "New Mexico Department of Health"
+      }
+    ],
+    "url": "https://cv.nmhealth.org/cases-by-county/",
+    "type": "table",
+    "headless": false,
+    "aggregate": "county",
+    "timeseries": false,
+    "certValidation": true,
+    "priority": 0,
+    "ssl": true,
+    "rating": 0.27450980392156865
+  },
+  {
     "country": "iso1:SE",
     "url": "https://services5.arcgis.com/fsYDFeRKu1hELJJs/arcgis/rest/services/FOHM_Covid_19_FME_1/FeatureServer/1/query?f=json&where=1%3D1&outFields=*&returnGeometry=false",
     "priority": 1,
@@ -2868,17 +2861,9 @@
     "rating": 0.2549019607843137
   },
   {
-    "county": "Butte County",
+    "county": "Glenn County",
     "state": "iso2:US-CA",
     "country": "iso1:US",
-    "sources": [
-      {
-        "url": "https://www.buttecounty.net/publichealth",
-        "name": "BCPHD",
-        "description": "Butte County Public Health Department"
-      }
-    ],
-    "url": "https://www.buttecounty.net/publichealth",
     "maintainers": [
       {
         "name": "John Bencina",
@@ -2892,6 +2877,7 @@
     "headless": false,
     "certValidation": true,
     "priority": 0,
+    "url": "https://www.countyofglenn.net/dept/health-human-services/public-health/covid-19",
     "type": "list",
     "ssl": true,
     "rating": 0.2549019607843137
@@ -2982,6 +2968,35 @@
     "type": "list",
     "ssl": false,
     "rating": 0.23529411764705882
+  },
+  {
+    "country": "iso1:JP",
+    "maintainers": [
+      {
+        "name": "Cameron Chamberlain",
+        "email": "corona@camjc.com",
+        "github": "camjc",
+        "country": "iso1:AU",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "flag": "🇦🇺"
+      }
+    ],
+    "priority": 1,
+    "sources": [
+      {
+        "description": "Ministry of Health, Labour, and Welfare Japan",
+        "name": "Ministry of Health, Labour, and Welfare Japan",
+        "url": "https://mhlw-gis.maps.arcgis.com/apps/opsdashboard/index.html#/0c5d0502bbb54f9a8dddebca003631b8/"
+      }
+    ],
+    "type": "json",
+    "url": "https://services8.arcgis.com/JdxivnCyd1rvJTrY/arcgis/rest/services/v2_covid19_list_csv/FeatureServer/0/query?where=0%3D0&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson",
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "ssl": true,
+    "rating": 0.21568627450980393
   },
   {
     "country": "iso1:LV",
