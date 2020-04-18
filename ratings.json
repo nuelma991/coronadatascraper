@@ -241,6 +241,25 @@
     "rating": 0.5686274509803921
   },
   {
+    "state": "iso2:US-FL",
+    "country": "iso1:US",
+    "priority": 1,
+    "aggregate": "county",
+    "sources": [
+      {
+        "url": "http://www.floridahealth.gov",
+        "name": "Florida Health"
+      }
+    ],
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "type": "csv",
+    "url": "https://opendata.arcgis.com/datasets/a7887f1940b34bf5a02c6f7f27a5cb2c_0.csv",
+    "ssl": true,
+    "rating": 0.5686274509803921
+  },
+  {
     "state": "iso2:US-MA",
     "country": "iso1:US",
     "aggregate": "county",
@@ -559,20 +578,20 @@
     "rating": 0.5098039215686274
   },
   {
-    "country": "iso1:SA",
-    "url": "https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus-disease-covid-19-situation/download/?format=csv&disjunctive.daily_cumulative=true&disjunctive.region=true&refine.daily_cumulative=Daily&timezone=America/Los_Angeles&lang=en&csv_separator=%2C",
-    "timeseries": true,
-    "priority": 1,
-    "type": "csv",
-    "maintainers": [
+    "state": "iso2:US-MI",
+    "country": "iso1:US",
+    "sources": [
       {
-        "name": "Quentin Golsteyn",
-        "github": "qgolsteyn",
-        "flag": "🇨🇦"
+        "name": "Michigan Department of Health & Human Services"
       }
     ],
+    "url": "https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html",
+    "type": "table",
+    "aggregate": "county",
+    "timeseries": false,
     "headless": false,
     "certValidation": true,
+    "priority": 0,
     "ssl": true,
     "rating": 0.5098039215686274
   },
@@ -696,7 +715,7 @@
     "headless": false,
     "certValidation": true,
     "priority": 0,
-    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-16",
+    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-17",
     "ssl": true,
     "rating": 0.49019607843137253
   },
@@ -979,6 +998,25 @@
     "rating": 0.47058823529411764
   },
   {
+    "state": "iso2:US-GA",
+    "country": "iso1:US",
+    "url": "https://d20s4vd27d0hk0.cloudfront.net",
+    "type": "table",
+    "aggregate": "county",
+    "sources": [
+      {
+        "url": "https://dph.georgia.gov",
+        "name": "Georgia Department of Public Health"
+      }
+    ],
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "priority": 0,
+    "ssl": true,
+    "rating": 0.47058823529411764
+  },
+  {
     "state": "iso2:US-MO",
     "country": "iso1:US",
     "type": "table",
@@ -987,53 +1025,6 @@
     "sources": [
       {
         "name": "Missouri Department of Health and Senior Services"
-      }
-    ],
-    "maintainers": [
-      {
-        "name": "Paul Boal",
-        "email": "paul.boal@amitechsolutions.com",
-        "url": "https://amitechsolutions.com",
-        "github": "paulboal",
-        "country": "iso1:US",
-        "flag": "🇺🇸"
-      }
-    ],
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "ssl": true,
-    "rating": 0.47058823529411764
-  },
-  {
-    "state": "iso2:US-MS",
-    "country": "iso1:US",
-    "sources": [
-      {
-        "url": "https://msdh.ms.gov/",
-        "name": "Mississippi State Department of Health"
-      }
-    ],
-    "url": "https://msdh.ms.gov/msdhsite/_static/14,0,420.html",
-    "type": "table",
-    "aggregate": "county",
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "ssl": true,
-    "rating": 0.47058823529411764
-  },
-  {
-    "state": "iso2:US-OK",
-    "country": "iso1:US",
-    "type": "table",
-    "aggregate": "county",
-    "url": "https://coronavirus.health.ok.gov/",
-    "sources": [
-      {
-        "name": "Oklahoma State Department of Health"
       }
     ],
     "maintainers": [
@@ -1116,39 +1107,6 @@
     "certValidation": true,
     "ssl": true,
     "rating": 0.47058823529411764
-  },
-  {
-    "country": "iso1:KR",
-    "aggregate": "state",
-    "type": "table",
-    "url": "http://ncov.mohw.go.kr/en/bdBoardList.do?brdId=16&brdGubun=162&dataGubun=&ncvContSeq=&contSeq=&board_id=",
-    "sources": [
-      {
-        "url": "http://ncov.mohw.go.kr/",
-        "name": "Ministry of Health and Welfare"
-      }
-    ],
-    "maintainers": [
-      {
-        "name": "Jacob McGowan",
-        "github": "jacobmcgowan"
-      },
-      {
-        "name": "Cameron Chamberlain",
-        "email": "corona@camjc.com",
-        "github": "camjc",
-        "country": "iso1:AU",
-        "state": "Victoria",
-        "city": "Melbourne",
-        "flag": "🇦🇺"
-      }
-    ],
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "ssl": false,
-    "rating": 0.45098039215686275
   },
   {
     "county": "Washoe County",
@@ -1862,6 +1820,37 @@
     "headless": false,
     "certValidation": true,
     "priority": 0,
+    "ssl": true,
+    "rating": 0.4117647058823529
+  },
+  {
+    "county": "Kings County",
+    "state": "iso2:US-CA",
+    "country": "iso1:US",
+    "maintainers": [
+      {
+        "name": "John Bencina",
+        "github": "jbencina",
+        "country": "iso1:US",
+        "state": "CA",
+        "flag": "🇺🇸"
+      },
+      {
+        "name": "Cameron Chamberlain",
+        "email": "corona@camjc.com",
+        "github": "camjc",
+        "country": "iso1:AU",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "flag": "🇦🇺"
+      }
+    ],
+    "url": "https://www.countyofkings.com/departments/health-welfare/public-health/coronavirus-disease-2019-covid-19/-fsiteid-1",
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "priority": 0,
+    "type": "list",
     "ssl": true,
     "rating": 0.4117647058823529
   },
@@ -2858,6 +2847,35 @@
     "certValidation": true,
     "priority": 0,
     "ssl": false,
+    "rating": 0.2549019607843137
+  },
+  {
+    "county": "Butte County",
+    "state": "iso2:US-CA",
+    "country": "iso1:US",
+    "sources": [
+      {
+        "url": "https://www.buttecounty.net/publichealth",
+        "name": "BCPHD",
+        "description": "Butte County Public Health Department"
+      }
+    ],
+    "url": "https://www.buttecounty.net/publichealth",
+    "maintainers": [
+      {
+        "name": "John Bencina",
+        "github": "jbencina",
+        "country": "iso1:US",
+        "state": "CA",
+        "flag": "🇺🇸"
+      }
+    ],
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "priority": 0,
+    "type": "list",
+    "ssl": true,
     "rating": 0.2549019607843137
   },
   {
