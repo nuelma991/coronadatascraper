@@ -715,7 +715,7 @@
     "headless": false,
     "certValidation": true,
     "priority": 0,
-    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-17",
+    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-18",
     "ssl": true,
     "rating": 0.49019607843137253
   },
@@ -1065,25 +1065,6 @@
     "rating": 0.47058823529411764
   },
   {
-    "state": "iso2:US-UT",
-    "country": "iso1:US",
-    "aggregate": "county",
-    "sources": [
-      {
-        "url": "https://health.utah.gov/",
-        "name": "Utah Department of Health"
-      }
-    ],
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "priority": 0,
-    "url": "https://coronavirus-dashboard.utah.gov/",
-    "type": "table",
-    "ssl": true,
-    "rating": 0.47058823529411764
-  },
-  {
     "country": "iso1:ZA",
     "url": "https://github.com/dsfsi/covid19za",
     "timeseries": true,
@@ -1107,6 +1088,39 @@
     "certValidation": true,
     "ssl": true,
     "rating": 0.47058823529411764
+  },
+  {
+    "country": "iso1:KR",
+    "aggregate": "state",
+    "type": "table",
+    "url": "http://ncov.mohw.go.kr/en/bdBoardList.do?brdId=16&brdGubun=162&dataGubun=&ncvContSeq=&contSeq=&board_id=",
+    "sources": [
+      {
+        "url": "http://ncov.mohw.go.kr/",
+        "name": "Ministry of Health and Welfare"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "Jacob McGowan",
+        "github": "jacobmcgowan"
+      },
+      {
+        "name": "Cameron Chamberlain",
+        "email": "corona@camjc.com",
+        "github": "camjc",
+        "country": "iso1:AU",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "flag": "🇦🇺"
+      }
+    ],
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "priority": 0,
+    "ssl": false,
+    "rating": 0.45098039215686275
   },
   {
     "county": "Washoe County",
@@ -2739,6 +2753,35 @@
     "rating": 0.29411764705882354
   },
   {
+    "country": "iso1:AU",
+    "maintainers": [
+      {
+        "name": "Cameron Chamberlain",
+        "email": "corona@camjc.com",
+        "github": "camjc",
+        "country": "iso1:AU",
+        "state": "Victoria",
+        "city": "Melbourne",
+        "flag": "🇦🇺"
+      }
+    ],
+    "priority": 2,
+    "sources": [
+      {
+        "name": "Northern Territory Government - Coronavirus site",
+        "url": "https://coronavirus.nt.gov.au"
+      }
+    ],
+    "state": "iso2:AU-NT",
+    "type": "table",
+    "url": "https://coronavirus.nt.gov.au/",
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "ssl": true,
+    "rating": 0.27450980392156865
+  },
+  {
     "country": "iso1:GB",
     "state": "iso2:GB-SCT",
     "url": "https://www.gov.scot/coronavirus-covid-19/",
@@ -3061,35 +3104,6 @@
     "priority": 0,
     "ssl": true,
     "rating": 0.21568627450980393
-  },
-  {
-    "country": "iso1:AU",
-    "maintainers": [
-      {
-        "name": "Cameron Chamberlain",
-        "email": "corona@camjc.com",
-        "github": "camjc",
-        "country": "iso1:AU",
-        "state": "Victoria",
-        "city": "Melbourne",
-        "flag": "🇦🇺"
-      }
-    ],
-    "priority": 2,
-    "sources": [
-      {
-        "name": "Northern Territory Government - Coronavirus site",
-        "url": "https://coronavirus.nt.gov.au"
-      }
-    ],
-    "state": "iso2:AU-NT",
-    "type": "table",
-    "url": "https://coronavirus.nt.gov.au/",
-    "timeseries": false,
-    "headless": false,
-    "certValidation": true,
-    "ssl": true,
-    "rating": 0.19607843137254902
   },
   {
     "state": "iso2:US-KS",
