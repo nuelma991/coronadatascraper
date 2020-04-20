@@ -578,6 +578,24 @@
     "rating": 0.5098039215686274
   },
   {
+    "country": "iso1:SA",
+    "url": "https://datasource.kapsarc.org/explore/dataset/saudi-arabia-coronavirus-disease-covid-19-situation/download/?format=csv&disjunctive.daily_cumulative=true&disjunctive.region=true&refine.daily_cumulative=Daily&timezone=America/Los_Angeles&lang=en&csv_separator=%2C",
+    "timeseries": true,
+    "priority": 1,
+    "type": "csv",
+    "maintainers": [
+      {
+        "name": "Quentin Golsteyn",
+        "github": "qgolsteyn",
+        "flag": "🇨🇦"
+      }
+    ],
+    "headless": false,
+    "certValidation": true,
+    "ssl": true,
+    "rating": 0.5098039215686274
+  },
+  {
     "state": "iso2:US-MI",
     "country": "iso1:US",
     "sources": [
@@ -715,7 +733,7 @@
     "headless": false,
     "certValidation": true,
     "priority": 0,
-    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-18",
+    "url": "https://api-covid19.rnbo.gov.ua/data?to=2020-04-19",
     "ssl": true,
     "rating": 0.49019607843137253
   },
@@ -1062,6 +1080,25 @@
     "url": "https://opendata.arcgis.com/datasets/bc83058386d2434ca8cf90b26dc6b580_0.csv",
     "type": "csv",
     "ssl": false,
+    "rating": 0.47058823529411764
+  },
+  {
+    "state": "iso2:US-UT",
+    "country": "iso1:US",
+    "aggregate": "county",
+    "sources": [
+      {
+        "url": "https://health.utah.gov/",
+        "name": "Utah Department of Health"
+      }
+    ],
+    "timeseries": false,
+    "headless": false,
+    "certValidation": true,
+    "priority": 0,
+    "url": "https://coronavirus-dashboard.utah.gov/",
+    "type": "table",
+    "ssl": true,
     "rating": 0.47058823529411764
   },
   {
@@ -2941,6 +2978,26 @@
     "url": "https://www.countyofglenn.net/dept/health-human-services/public-health/covid-19",
     "type": "list",
     "ssl": true,
+    "rating": 0.2549019607843137
+  },
+  {
+    "state": "iso2:US-NV",
+    "country": "iso1:US",
+    "aggregate": "county",
+    "url": "https://gethealthycarsoncity.org/novel-coronavirus-2019/",
+    "sources": [
+      {
+        "name": "Carson City Health and Human Services",
+        "url": "https://gethealthycarsoncity.org/",
+        "description": "Carson City Health and Human Services - Aggregate data for the Quad County region: Carson City, Douglas, Lyon, and Storey counties."
+      }
+    ],
+    "certValidation": false,
+    "type": "table",
+    "timeseries": false,
+    "headless": false,
+    "priority": 0,
+    "ssl": false,
     "rating": 0.2549019607843137
   },
   {
